@@ -3,7 +3,6 @@ package com.mashibing.juc.c0001_threadBase;
 import java.util.concurrent.TimeUnit;
 
 /*
-@Author: llb
 @Date : 2021/7/2 16:30
 */
 public class T01_WhatIsThread {
