@@ -1,12 +1,21 @@
-package com.mashibing.cas;
+package com.mashibing.juc.c0004_cas;
 
 import org.openjdk.jol.info.ClassLayout;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 /*
-@Author: llb
-@Date : 2021/6/30 14:55
+CAS 无锁优化 自旋
+cas(v,expected,newValue)
+    if v==expected
+        v=new
+    else
+        try again or fail
+
+CAS会有ABA问题： 期望值是1 ，但操作过程中，有其他线程把1改为2 ，又改回1
+    想解决ABA问题，则需要加入版本号，多检查一个version
+
+    ABA主要是影响对象的修改，对数值修改，并不会有影响
 */
 public class T01 {
     public static void main(String [] args){
