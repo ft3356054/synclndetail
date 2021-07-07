@@ -1,4 +1,4 @@
-package com.mashibing.juc.threadBase;
+package com.mashibing.juc.c0001_threadBase;
 
 import java.util.concurrent.TimeUnit;
 

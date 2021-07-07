@@ -1,6 +1,4 @@
-package com.mashibing.juc.threadBase;
-
-import org.springframework.beans.factory.annotation.Value;
+package com.mashibing.juc.c0001_threadBase;
 
 /*
 @Author: llb
